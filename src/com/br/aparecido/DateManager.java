@@ -12,9 +12,9 @@ public abstract class DateManager {
 		minDateSelectable = Calendar.getInstance();
 
 		minDateSelectable.set(1900, Calendar.JANUARY, 1, 0, 0, 0);
-		minDateSelectable.clear(Calendar.HOUR);
 		minDateSelectable.clear(Calendar.MINUTE);
 		minDateSelectable.clear(Calendar.SECOND);
+		minDateSelectable.set(Calendar.HOUR_OF_DAY, 0);
 		minDateSelectable.clear(Calendar.MILLISECOND);
 
 		startDate = Calendar.getInstance();
