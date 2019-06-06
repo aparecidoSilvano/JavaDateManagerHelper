@@ -1,3 +1,26 @@
 apply plugin: 'maven'
+apply plugin: 'java'
+
+sourceSets {
+   main {
+      java {
+         srcDir 'src'
+      }
+   }
+   
+   test {
+      java {
+         srcDir 'tests'
+      }
+   }
+}
+
+repositories {
+   jcenter()
+}
+
+dependencies {
+   compile 'org.slf4j:slf4j-api:1.7.12'
+}
 
 group = 'com.github.aparecidoSilvano'
